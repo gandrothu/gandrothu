@@ -42,7 +42,7 @@ I am currently building my career path towards becoming a **Software Engineer** 
 
 ## 💼 My Resume
 
-If you'd like to know more about my professional background, you can check out my [Resume](https://example.com/your-resume.pdf) to see the details of my experience, skills, and achievements.
+If you'd like to know more about my professional background, you can check out my [Resume]([https://example.com/your-resume.pdf](https://raw.githubusercontent.com/gandrothu/gandrothu/17c48cd16e3ac6b636d6f014fc576379841ea4d2/21A81A05E6_GKVS_RESUME.pdf)) to see the details of my experience, skills, and achievements.
 
 ---
 
