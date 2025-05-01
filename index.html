@@ -5,29 +5,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Gandrothu Kanaka Venkata Satyanarayana's portfolio website. Full-stack projects, skills, and experience in DevOps, Python, SQL, and more." />
+        content="Software Engineer portfolio of Gandrothu Kanaka Venkata Satyanarayana - Full-stack development, DevOps, and Data Engineering expertise." />
     <meta name="keywords"
-        content="Satyanarayana, Portfolio, DevOps, Python, SQL, Airflow, Full Stack Developer, Orion Governance, Software Engineer" />
+        content="Satyanarayana Gandrothu, Full Stack Developer, DevOps Engineer, Python Developer, SQL Expert, Java Developer, Software Engineer Portfolio" />
     <meta name="author" content="Gandrothu Kanaka Venkata Satyanarayana" />
-    <meta property="og:title" content="Satyanarayana | Portfolio">
-    <meta property="og:description" content="A showcase of Satyanarayana's work, skills, and projects.">
+    <meta property="og:title" content="Satyanarayana Gandrothu | Software Engineer Portfolio">
+    <meta property="og:description" content="Full-stack developer specializing in Java, Python, and data engineering solutions.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="static/profile_image.png">
     <meta property="og:url" content="https://your-portfolio-link.com">
-    <title>Gandrothu Kanaka Venkata Satyanarayana | Portfolio</title>
+    <link rel="canonical" href="https://your-portfolio-link.com" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="static/favicon.ico" type="image/x-icon">
+    
+    <title>Satyanarayana Gandrothu | Software Engineer Portfolio</title>
 
     <link rel="stylesheet" href="static/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+    <!-- Schema markup for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Gandrothu Kanaka Venkata Satyanarayana",
+      "url": "https://your-portfolio-link.com",
+      "jobTitle": "Software Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Orion Governance"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Sri Vasavi Engineering College (JNTU Kakinada)"
+      },
+      "sameAs": [
+        "https://github.com/gandrothu",
+        "https://www.linkedin.com/in/satyanarayana-gandrothu"
+      ]
+    }
+    </script>
 </head>
 
 <body>
     <div class="header">
         <div class="logo-container">
-            <a href="#top"><img src="static/logo.png" alt="Logo" style="height: 60px;" /></a>
+            <a href="#top"><img src="static/logo.png" alt="Satyanarayana Gandrothu Logo" loading="lazy" /></a>
         </div>
-        <div class="burger" id="burger">&#9776;</div>
+        <div class="burger" id="burger">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
         <div class="navigation-container">
+            <div class="nav-overlay" id="nav-overlay"></div>
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
@@ -36,177 +69,379 @@
         </div>
     </div>
 
-    <section id="top" class="main-section profile-section">
-        <div class="intro-container">
-            <img src="static/profile_image.png" alt="Profile Avatar">
-            <h1>Hello! I am
-                <pre class="tagline highlight"></pre>
-            </h1>
-        </div>
-        <div class="about-container">
-            <p>A Software Engineer passionate about crafting
-                clean, efficient,
-                and scalable code. I enjoy solving real-world problems through technology, whether it's building
-                intuitive user
-                interfaces or designing robust backend systems.</p>
-            <div class="subtitle">
-                Always learning, always evolving.
+    <div id="particles-js"></div>
+
+    <section id="top" class="main-section hero-section">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="static/profile_image.png" alt="Satyanarayana Gandrothu Profile Photo" loading="lazy" width="200" height="200">
+            </div>
+            <div class="hero-text">
+                <h1>Hello! I am</h1>
+                <div class="tagline highlight"></div>
+                <p class="hero-description">A Software Engineer passionate about crafting clean, efficient, and scalable code. I enjoy solving real-world problems through technology.</p>
+                <div class="cta-buttons">
+                    <a href="21A81A05E6_GKVS_RESUME.pdf" class="cta-button primary" target="_blank" rel="noopener">Download CV</a>
+                    <a href="#contact" class="cta-button secondary">Contact Me</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="education" class="experience-section main-section">
-        <h2>Education</h2>
-        <div class="education-entry">
-            <h3>B.Tech in Computer Science and Engineering</h3>
-            <p><strong>Institution:</strong> Sri Vasavi Engineering College (JNTU Kakinada)</p>
-            <p><strong>Duration:</strong> 2021 - 2025</p>
-            <p><strong>CGPA:</strong> 80.75%</p>
+    <section id="education" class="education-section main-section">
+        <div class="section-header">
+            <h2>Education</h2>
+            <div class="section-divider"></div>
         </div>
+        <div class="education-timeline">
+            <div class="education-entry">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="education-content">
+                    <h3>B.Tech in Computer Science and Engineering</h3>
+                    <p class="institution">Sri Vasavi Engineering College (JNTU Kakinada)</p>
+                    <p class="duration">2021 - 2025</p>
+                    <p class="grade"><strong>CGPA:</strong> 80.75%</p>
+                </div>
+            </div>
 
-        <div class="education-entry">
-            <h3>Intermediate (10+2)</h3>
-            <p><strong>Institution:</strong> Bhashyam Junior College, Andhra Pradesh</p>
-            <p><strong>Duration:</strong> 2019 - 2021</p>
-            <p><strong>Percentage:</strong> 95.1%</p>
-        </div>
+            <div class="education-entry">
+                <div class="education-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="education-content">
+                    <h3>Intermediate (10+2)</h3>
+                    <p class="institution">Bhashyam Junior College, Andhra Pradesh</p>
+                    <p class="duration">2019 - 2021</p>
+                    <p class="grade"><strong>Percentage:</strong> 95.1%</p>
+                </div>
+            </div>
 
-        <div class="education-entry">
-            <h3>Secondary School (SSC)</h3>
-            <p><strong>Institution:</strong> Bhashyam English Medium School, Andhra Pradesh</p>
-            <p><strong>Year:</strong> 2018 - 2019</p>
-            <p><strong>Percentage:</strong> 95%</p>
+            <div class="education-entry">
+                <div class="education-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="education-content">
+                    <h3>Secondary School (SSC)</h3>
+                    <p class="institution">Bhashyam English Medium School, Andhra Pradesh</p>
+                    <p class="duration">2018 - 2019</p>
+                    <p class="grade"><strong>Percentage:</strong> 95%</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="skills" class="skills-section main-section">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>💻 Programming Languages</h3>
-                <p>C, C++, Java, Python, SQL</p>
+        <div class="section-header">
+            <h2>Skills & Expertise</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skill-group">
+                <h3>Programming Languages</h3>
+                <div class="skill-bars">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Java</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>SQL</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>C/C++</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="skill-category">
-                <h3>🎨 Frontend Development</h3>
-                <p>HTML, CSS, JavaScript, TypeScript</p>
+            
+            <div class="skill-group">
+                <h3>Web Technologies</h3>
+                <div class="skill-bars">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML/CSS</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>TypeScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="skill-category">
-                <h3>🔧 Backend & Automation</h3>
-                <p>Playwright, Java (JSP/Servlets), Python Scripting</p>
-            </div>
-            <div class="skill-category">
-                <h3>🗄️ Databases</h3>
-                <p>MySQL, MongoDB, PostgreSQL</p>
-            </div>
-            <div class="skill-category">
-                <h3>🧠 Data Science</h3>
-                <p>Machine Learning (Regression, Classification, Clustering)</p>
-            </div>
-            <div class="skill-category">
-                <h3>🧮 Computer Science Fundamentals</h3>
-                <p>DSA, OS, Computer Networks</p>
-            </div>
-            <div class="skill-category">
-                <h3>🧰 Developer Tools</h3>
-                <p>IntelliJ, VS Code, Git</p>
+            
+            <div class="skill-group">
+                <h3>Databases & Tools</h3>
+                <div class="skill-icons">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-database"></i>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-server"></i>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-table"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-code"></i>
+                        <span>VS Code</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <span>IntelliJ</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="projects" class="project-section main-section">
-        <h2>Projects</h2>
-
-        <div class="project-card">
-            <h3>🔍 Meta-Interest Recommendation System</h3>
-            <p><strong>Tech Stack:</strong> Java Full Stack (JSP, Servlets, MySQL)</p>
-            <p>
-                Developed <i>Meta-Interest</i>, a personality-aware recommendation system that addresses redundancy and
-                the cold start problem by integrating personality-based interest mining and meta-path exploration.
-                Conducted extensive experiments comparing Meta-Interest with deep learning and session-based methods,
-                achieving significant improvements in precision and recall, especially in cold start scenarios.
-            </p>
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+            <div class="section-divider"></div>
         </div>
 
-        <div class="project-card">
-            <h3>🏨 Hotel Reservation System</h3>
-            <p><strong>Tech Stack:</strong> Java, JDBC, MySQL</p>
-            <p>
-                Developed a Java-based hotel reservation system with a MySQL back-end, providing a command-line
-                interface for seamless management of room bookings. The system includes core features such as room
-                reservation, booking updates, guest information retrieval, and deletion of records. This project
-                demonstrated strong skills in database management, JDBC for database connectivity, and effective user
-                interaction through a console-based UI.
-            </p>
-        </div>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="static/project1.jpg" alt="Meta-Interest Recommendation System" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3>Meta-Interest Recommendation System</h3>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">JSP</span>
+                        <span class="tech-badge">Servlets</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                    <p>
+                        A personality-aware recommendation system that addresses redundancy and
+                        the cold start problem by integrating personality-based interest mining and meta-path exploration.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-globe"></i> Live Demo</a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="project-card">
-            <h3>🩺 Doctor Appointment Booking Website</h3>
-            <p><strong>Tech Stack:</strong> Java, HTML, CSS, JavaScript, MySQL, Servlets</p>
-            <p>
-                Developed a website for booking doctor appointments at a multi-specialty hospital. The platform allows
-                users to select specialists and schedule appointments at convenient dates and times. The platform
-                enables users to browse through a list of medical specialists across various departments and select the
-                most suitable doctor based on their needs.
-            </p>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="static/project2.jpg" alt="Hotel Reservation System" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3>Hotel Reservation System</h3>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">JDBC</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                    <p>
+                        A Java-based hotel reservation system with a MySQL back-end, providing seamless management of room bookings,
+                        guest information, and booking updates.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="static/project3.jpg" alt="Doctor Appointment Booking Website" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3>Doctor Appointment Booking Website</h3>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">HTML/CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">Servlets</span>
+                    </div>
+                    <p>
+                        A comprehensive platform for booking doctor appointments at a multi-specialty hospital,
+                        allowing users to select specialists and schedule appointments.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-globe"></i> Live Demo</a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="experience" class="experience-section main-section">
-        <h2>Experience</h2>
-        <div class="experience-highlight">
-            <div class="exp-title">
-                <h3>Associate Product Engineer Intern</h3>
-                <p class="company">Orion Governance · Feb 2025 - Present</p>
-            </div>
-            <div class="exp-description">
-                <p>
-                    Working on developing and optimizing metadata-driven data workflows for enterprise-scale governance
-                    platforms.
-                    Contributing to <strong>data lineage tracking</strong> and building robust, automated pipelines
-                    using <strong>Apache Airflow</strong>, and <strong>Python</strong>.
-                </p>
-                <p>
-                    Gained hands-on experience with <strong>PySpark</strong> for distributed data processing,
-                    <strong>SQL</strong> for querying structured data,
-                    and tools for managing <strong>metadata harvesting</strong>, validation, and orchestration.
-                </p>
-                <p>
-                    Actively collaborating in a cross-functional engineering team to improve data accessibility,
-                    quality, and compliance.
-                </p>
+        <div class="section-header">
+            <h2>Work Experience</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="experience-container">
+            <div class="experience-highlight">
+                <div class="experience-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="experience-content">
+                    <div class="exp-title">
+                        <h3>Associate Product Engineer Intern</h3>
+                        <p class="company">Orion Governance</p>
+                        <p class="duration">Feb 2025 - Present</p>
+                    </div>
+                    <div class="exp-description">
+                        <ul>
+                            <li>
+                                Developing and optimizing metadata-driven data workflows for enterprise-scale governance
+                                platforms using <span class="highlight-text">Apache Airflow</span> and <span class="highlight-text">Python</span>.
+                            </li>
+                            <li>
+                                Contributing to data lineage tracking and implementing robust, automated pipelines.
+                            </li>
+                            <li>
+                                Working with <span class="highlight-text">PySpark</span> for distributed data processing and
+                                <span class="highlight-text">SQL</span> for database operations.
+                            </li>
+                            <li>
+                                Collaborating in a cross-functional team to improve data accessibility, quality, and compliance.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact-section main-section">
-        <h2>Contact</h2>
-        <p class="thank-you-message">
-            Thank you for visiting!<br />
-            If you'd like to learn more about my work, you can view my <a href="21A81A05E6_GKVS_RESUME.pdf"
-                target="_blank">Resume</a> for more details.<br />
-            Feel free to connect with me through the channels below.
-        </p>
-
-        <div class="connect">
-            <a href="mailto:satyagandrothu64@gmail.com" target="_blank" rel="noopener noreferrer">
-                <i class="fa-solid fa-envelope"></i>
-                <span>Email</span>
-            </a>
-            <a href="tel:+919912366332" target="_blank" rel="noopener noreferrer">
-                <i class="fa-solid fa-phone"></i>
-                <span>Phone</span>
-            </a>
-            <a href="https://www.linkedin.com/in/satyanarayana-gandrothu" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-linkedin"></i>
-                <span>LinkedIn</span>
-            </a>
-            <a href="https://github.com/gandrothu" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-github"></i>
-                <span>GitHub</span>
-            </a>
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <a href="mailto:satyagandrothu64@gmail.com">satyagandrothu64@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Phone</h3>
+                        <a href="tel:+919912366332">+91 99123 66332</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/satyanarayana-gandrothu" target="_blank" rel="noopener noreferrer">satyanarayana-gandrothu</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/gandrothu" target="_blank" rel="noopener noreferrer">gandrothu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
 
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 Gandrothu Kanaka Venkata Satyanarayana. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/satyanarayana-gandrothu" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/gandrothu" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="mailto:satyagandrothu64@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Particles.js for background animation -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="static/script.js"></script>
 </body>
 
